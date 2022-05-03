@@ -1,0 +1,16 @@
+:root{
+  --bg-color: linear-gradient(252.44deg, #D3AB9E 0%, #EAC9C1 50%, #EBD8D0 100%);
+  --text-color: #000;
+  --nav-bg: #FFFBFF;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 10px;
+}
+body{
+  background: var(--bg-color);
+  height: 200vh;
+}
