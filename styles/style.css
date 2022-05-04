@@ -80,7 +80,7 @@ li>a:hover{
   margin-bottom: 0;
 }
 
-#video{
+#video-container{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -181,4 +181,68 @@ input[type="email"]::placeholder{
   text-align: center;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+
+@media only screen and (max-width: 970px) {
+  #header{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 110px;
+  }
+  #header>div{
+    margin: 10px 0;
+  }
+  #header>div>a{
+    margin: 0;
+  }
+  .fa-solid,
+  .fa-brands {
+    font-size: 25pt;
+  }
+  #main-info{
+    margin: 110px 0;
+  }
+  #main-info>main>p{
+    margin-top: 20px;
+    font-size: 10pt;
+  }
+  #main-info>main>p:nth-last-child(2){
+    margin-bottom: 0;
+  }
+  #video{
+    margin: 50px 0;
+  }
+  iframe{
+    width: 400px;
+    height: 200px;
+  }
+  .form-container>form{
+    margin-top: 0;
+  }
+  .form-container>form>input{
+    font-size: 10pt;
+    width: 150px;
+  }
+  .form-container>form>button{
+    width: 100px;
+  }
+  #Prices{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .bedroom>div>h1{
+    font-size: 15pt;
+  }
+  .bedroom>h2{
+    font-size: 12pt;
+  }
+  .bedroom>button{
+    font-size: 10pt;
+  }
+  .bedroom>ul>li{
+    font-size: 10pt;
+  }
 }
