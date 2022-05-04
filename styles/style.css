@@ -20,7 +20,7 @@ html{
 body{
   background: var(--bg-color);
   font-family: 'Lato', sans-serif;
-  height: 200vh;
+  height: 100%;
 }
 ul{
   list-style: none;
@@ -44,13 +44,13 @@ ul{
   font-weight: bold;
   font-size: 20pt;
 }
-.fa-solid{
+.fa-solid,
+.fa-brands{
   color: rgb(255, 0, 0);
-  font-size: 30pt;
+  font-size: 35pt;
 }
-
 nav{
-  font-weight: 400;
+  font-weight: 700;
 }
 nav ul{
   display: flex;
@@ -59,3 +59,83 @@ nav ul{
   font-size: 13pt;
   justify-content: space-around;
 }
+li>a{
+  transition: all 0.3s ease-in-out;
+}
+li>a:hover{
+  color:#D3AB9E;
+}
+
+#main-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 110px 0;
+  font-size: 15pt;
+}
+#main-info>main>p{
+  margin-top: 1.5em;
+}
+#main-info>main>p:nth-last-child(2){
+  margin-bottom: 0;
+}
+
+#video{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+iframe{
+  width: 40vw;
+  height: 45vh;
+}
+
+.form-container>form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  font-size: 20pt;
+}
+.form-container>form>input{
+  width: 200px;
+  height: 30px;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #000;
+  margin: 10px 0;
+  font-size: 12pt;
+}
+input[type="email"]:focus{
+  outline: none;
+}
+input[type="email"]::placeholder{
+  color: #000;
+  text-align: center;
+}
+button{
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background: #FFFBFF;
+  color: #000;
+  font-size: 12pt;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 100px;
+}
+button:hover{
+  background: #D3AB9E;
+  color: #000;
+}
+
+#Prices{
+  margin: 50px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
