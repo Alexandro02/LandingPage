@@ -210,15 +210,15 @@ input[type="email"]::placeholder{
   #main-info>main>p:nth-last-child(2){
     margin-bottom: 0;
   }
-  #video{
-    margin: 50px 0;
-  }
   iframe{
     width: 400px;
     height: 200px;
   }
   .form-container>form{
     margin-top: 0;
+  }
+  .form-container>form>label{
+    margin: 20px 0 0;
   }
   .form-container>form>input{
     font-size: 10pt;
