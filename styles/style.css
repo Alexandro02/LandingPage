@@ -115,7 +115,7 @@ input[type="email"]::placeholder{
   color: #000;
   text-align: center;
 }
-button{
+.form-container>form>button{
   width: 200px;
   height: 30px;
   border-radius: 5px;
@@ -125,17 +125,60 @@ button{
   font-size: 12pt;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  margin-bottom: 100px;
 }
-button:hover{
+.form-container>form>button:hover{
   background: #D3AB9E;
   color: #000;
 }
 
 #Prices{
-  margin: 50px 0;
+  margin: 40px 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  gap: 15px;
 }
-
+.bedroom{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 350px;
+  border: 2px solid #000;
+  border-radius: 10px;
+}
+.bedroom>div>h1{
+  padding: 15px 0;
+  font-size: 18pt;
+}
+.bedroom>button{
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background: #FFFBFF;
+  color: #000;
+  font-size: 12pt;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin: 10px 0;
+}
+.bedroom>button:hover{
+  background: #D3AB9E;
+  color: #000;
+}
+.bedroom>h2{
+  font-size: 20pt;
+  margin: 12px 0;
+}
+.bedroom>ul>li{
+  font-size: 15pt;
+  margin: 20px 0;
+}
+.upBg{
+  background: var(--nav-bg);
+  width: 100%;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
